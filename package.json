@@ -1,0 +1,49 @@
+{
+  "name": "our-campus-server",
+  "version": "1.0.0",
+  "description": "Our Campus",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node our-campus-server/index",
+    "server": "nodemon our-campus-server/index",
+    "client": "npm start --prefix our-campus-client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node our-campus-server/seeder",
+    "data:destroy": "node our-campus-server/seeder -d",
+    "user:add": "node our-campus-server/userAdder",
+    "user:remove": "node our-campus-server/userAdder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix our-campus-client && npm run build --prefix our-campus-client"
+  },
+  "keywords": [
+    "Sri",
+    "Krishna",
+    "College",
+    "Of",
+    "Engineering",
+    "and",
+    "Technology",
+    "Our Campus"
+  ],
+  "author": "Sadurathman V",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "ger": "^0.0.99",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "knn-recommender": "^3.0.0",
+    "mongoose": "^6.0.15",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "node-cron": "^3.0.0",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
