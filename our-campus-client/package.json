@@ -1,6 +1,6 @@
 {
   "name": "our-campus-client",
-  "proxy": "https://our-skcet.onrender.com",
+  "proxy": "https://our-psna-campus.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

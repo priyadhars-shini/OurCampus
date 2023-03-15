@@ -2,7 +2,7 @@ import axios from "axios";
 import { getUserFromLocalStorage } from "./localStorage";
 
 const api = axios.create({
-  baseURL: "https://our-skcet.onrender.com",
+  baseURL: "https://our-psna-campus.onrender.com",
 });
 
 api.interceptors.request.use((config) => {
