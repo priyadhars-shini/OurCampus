@@ -99,7 +99,7 @@ class GoogleAuth extends React.Component {
                   <i className='fas fa-bell'></i> Notifications
                 </Nav.Link>
               </LinkContainer> */}
-              <NavDropdown
+              {/* <NavDropdown
                 id='nav-dropdown-dark-example'
                 title='notifications'
                 menuVariant='dark'
@@ -123,7 +123,7 @@ class GoogleAuth extends React.Component {
                 ) : (
                   <NavDropdown.Item>No Notifications Yet</NavDropdown.Item>
                 )}
-              </NavDropdown>
+              </NavDropdown> */}
               <NavDropdown
                 id='nav-dropdown-dark-example'
                 title={`${this.username}`}

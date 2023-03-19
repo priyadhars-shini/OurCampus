@@ -77,11 +77,11 @@ const AddPostScreen = ({ hide }) => {
 
     const data = new FormData();
     data.append("file", file);
-    data.append("upload_preset", "sk1xkp14");
+    data.append("upload_preset", "ztrde8oo");
 
     try {
       const res = await fetch(
-        `https://api.cloudinary.com/v1_1/dpscbesvf/image/upload`,
+        `https://api.cloudinary.com/v1_1/dhk3utwzv/image/upload`,
         {
           method: "POST",
           body: data,
@@ -93,8 +93,8 @@ const AddPostScreen = ({ hide }) => {
       const imgUrl = await img.secure_url;
       setImage(
         imgUrl.replace(
-          "dpscbesvf/image/upload",
-          "dpscbesvf/image/upload/ar_1:1,c_thumb,z_0.75"
+          "dhk3utwzv/image/upload",
+          "dhk3utwzv/image/upload/ar_1:1,c_thumb,z_0.75"
         )
       );
 

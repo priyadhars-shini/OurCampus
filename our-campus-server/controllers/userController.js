@@ -28,7 +28,7 @@ const getUserByUsername = asyncHandler(async (usernames) => {
 });
 
 const developerUsers = asyncHandler(async (req, res) => {
-  const developers = ["19eucb058", "pripranitha22", "19eucb007"];
+  const developers = ["rathikap2002", "pripranitha22", "nagachithu2002"];
   const devDetails = await getUserByUsername(developers);
   console.log(devDetails);
   res.json(devDetails);
